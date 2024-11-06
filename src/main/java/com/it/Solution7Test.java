@@ -39,7 +39,7 @@ public class Solution7Test {
      */
     private static void testSmallestStringWithSwaps1(Solution7 solution) {
         String s = "dcab";
-        List<List<Integer>> pairs = Arrays.asList(Arrays.asList(0,.), Arrays.asList(3,0));
+        List<List<Integer>> pairs = Arrays.asList(Arrays.asList(0,3), Arrays.asList(1,2));
         String result = solution.smallestStringWithSwaps(s, pairs);
         System.out.println(result); //预期输出:"bacd"
     }
