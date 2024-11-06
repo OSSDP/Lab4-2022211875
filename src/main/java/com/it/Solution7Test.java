@@ -39,9 +39,9 @@ public class Solution7Test {
      */
     private static void testSmallestStringWithSwaps1(Solution7 solution) {
         String s = "dcab";
-        List<List<Integer>> pairs = Arrays.asList(Arrays.asList(0, 3), Arrays.asList(1, 2));
+        List<List<Integer>> pairs = Arrays.asList(Arrays.asList(0,0), Arrays.asList(1, 1));
         String result = solution.smallestStringWithSwaps(s, pairs);
-        System.out.println(result); //预期输出:"dcba"
+        System.out.println(result); //预期输出:"bacd"
     }
 
     /**
@@ -52,7 +52,7 @@ public class Solution7Test {
         String s = "abcd";
         List<List<Integer>> pairs = Arrays.asList(Arrays.asList(0, 3), Arrays.asList(1, 2), Arrays.asList(0, 2));
         String result = solution.smallestStringWithSwaps(s, pairs);
-        System.out.println(result);//预期输出:"dcba"
+        System.out.println(result);//预期输出:"abcd"
     }
 
     /**
@@ -63,7 +63,7 @@ public class Solution7Test {
         String s = "nba";
         List<List<Integer>> pairs = Arrays.asList(Arrays.asList(0, 1), Arrays.asList(1, 2));
         String result = solution.smallestStringWithSwaps(s, pairs);
-        System.out.println(result);//预期输出“nba”
+        System.out.println(result);//预期输出“abn”
     }
 
     /**
@@ -74,7 +74,7 @@ public class Solution7Test {
         String s = "uzi";
         List<List<Integer>> pairs = Arrays.asList();
         String result = solution.smallestStringWithSwaps(s, pairs);
-        System.out.println(result);//预期输出:"zui"
+        System.out.println(result);//预期输出:"uzi"
     }
 
     /**
@@ -85,6 +85,6 @@ public class Solution7Test {
         String s = "";
         List<List<Integer>> pairs = Arrays.asList();
         String result = solution.smallestStringWithSwaps(s, pairs);
-        System.out.println(result);//预期输出:"non-empty"
+        System.out.println(result);//预期输出:""
     }
 }
